@@ -1,0 +1,234 @@
+* {
+    box-sizing: border-box;
+    font-family: arial;
+}
+body {
+    background-color: rgb(75, 176, 238);
+    opacity: 0.8;
+}
+:root {
+    --primary: black;
+    --secondary: rgb(196, 194, 195);
+    --third: rgb(126, 119, 120);
+}
+header {
+    text-align: center;
+    font-family: monospace;
+    font-size: 36px;
+    font-weight: bold;
+}
+nav {
+display: flex;
+flex-wrap: wrap;
+flex-direction: row;
+float: left;
+flex: 1;
+background-color: var(--secondary);
+width: 100%;
+margin-top: auto;
+}
+nav:hover {
+    color: lightblue;
+}
+button {
+    color:dimgray;
+}
+h1 {
+    font-size: 32px;
+    flex-direction: row;
+    margin-left: 20px;
+    margin-top: 32px;
+    flex: 1;
+    text-align: left;
+}
+primary,
+secondary {
+    flex-direction: row;
+}
+.headercolumn {
+    width: 30%;
+    margin-right: 75px;
+}
+.infocolumn {
+    width: 70%;
+    margin-left: 200px;
+    align-items: center;
+}
+#photo {
+    align-items: center;
+    display: flexbox;
+    border: 5px solid red;
+    box-sizing: border-box;
+    margin-bottom: 50px;
+}
+#aboutme {
+    text-align: center;
+    display: flexbox;
+    border: 5px solid red;
+    box-sizing: border-box;
+    margin-bottom: 50px;
+}
+.flexcontainer {
+    display: flex;
+    flex-wrap: wrap;
+}
+.flex {
+    justify-content: center;
+    align-items: center;
+    background-color: var(--secondary);
+    padding: 50px solid red;
+    border: 25px solid green;
+    box-sizing: border-box;
+    border-radius: 10%;
+    flex: 1;
+    flex-direction: column;
+    margin: 50px 50px 50px 50px;
+}
+.flex-large {
+    justify-content: center;
+    align-items: center;
+    background-color: var(--secondary);
+    padding: 50px solid red;
+    border: 25px solid green;
+    box-sizing: border-box;
+    border-radius: 10%;
+    flex-grow: 8;
+    flex-direction: column;
+    margin: 50px 50px 50px 50px;
+}
+/*
+.container_1 {
+    width: 700px;
+    height: 700px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    background-color: var(--secondary);
+    padding: 50px solid red;
+    border: 25px solid green;
+    box-sizing: border-box;
+    border-radius: 10% 10% 10% 10%;
+    float: right;
+    margin: 50px 50px 50px 50px;
+}
+.container_2,
+.container_3,
+.container_4,
+.container_5 {
+    background-color: var(--secondary);
+    padding: 50px solid red;
+    border: 25px solid green;
+    box-sizing: border-box;
+    border-radius: 10% 10% 10% 10%;
+    font-size: 28px;
+    font-weight: bold;
+    margin: 50px 50px 50px 50px;
+    width: 300px;
+    float: right;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+}
+*/
+.flex-large:hover,
+.flex:hover {
+    cursor:progress;
+    border-color: rgb(225, 39, 176);
+    color:rgb(202, 216, 216);
+}
+#relative2 {
+    position: relative;
+    bottom: -25px;
+    right: 100px;
+    border: 5px solid var(--primary);
+    box-sizing: border-box;
+}
+h2 {
+   text-align: center;
+}
+h3 {
+    text-align: center;
+    align-content: center;
+ }
+#Contact-Info {
+    text-align: center;
+    display: flex;
+    flex: wrap;
+    flex-direction:row;
+    justify-content: space-between;
+    align-items: center;
+}
+footer {
+    width: 100%;
+    margin-top: auto;
+    background-color: var(--secondary);
+    display: flex;
+    justify-content: center;
+}
+ul {
+    list-style-type: none;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 0;
+    margin: 0;
+}
+li {
+    align-items: center;
+    text-align: center;
+    padding: 20px;
+    margin: auto;
+}
+@media screen and (max-width: 768px) {
+.container_1,
+.container_2,
+.container_3,
+.container_4,
+.container_5 {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+h1 {
+    text-align: center;
+}
+}
+
+@media screen and (max-width: 320px) {
+.container_1,
+.container_2,
+.container_3,
+.container_4,
+.container_5  {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 50px;
+    width: 50px;
+    height: 50px;
+}
+h1 {
+    text-align: center;
+}
+primary {
+    text-align: center;
+    justify-content: center;
+}
+secondary {
+    justify-content: center;
+}
+footer {
+    text-align: center;
+    justify-content: center;
+    width: 100%;
+    margin: auto;
+}
+}
+
