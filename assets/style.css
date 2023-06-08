@@ -3,9 +3,11 @@
     font-family: arial;
 }
 body {
+    position: relative;
     background-color: rgb(75, 176, 238);
     opacity: 0.8;
 }
+
 :root {
     --primary: black;
     --secondary: rgb(196, 194, 195);
@@ -22,13 +24,12 @@ display: flex;
 flex-wrap: wrap;
 flex-direction: row;
 float: left;
-flex: 1;
 background-color: var(--secondary);
 width: 100%;
-margin-top: auto;
+margin: 0;
 }
-nav:hover {
-    color: lightblue;
+button:hover {
+    background-color: rgb(218, 83, 16);
 }
 button {
     color:dimgray;
@@ -40,19 +41,16 @@ h1 {
     margin-top: 32px;
     flex: 1;
     text-align: left;
-}
-primary,
-secondary {
-    flex-direction: row;
+    text-decoration:underline;
 }
 .headercolumn {
-    width: 30%;
-    margin-right: 75px;
+    float: left;
+    width: 20%;
 }
 .infocolumn {
-    width: 70%;
-    margin-left: 200px;
-    align-items: center;
+    float:right;
+    width: 75%;
+    margin-right: 200px;
 }
 #photo {
     align-items: center;
@@ -60,28 +58,40 @@ secondary {
     border: 5px solid red;
     box-sizing: border-box;
     margin-bottom: 50px;
+    font-size: 24px;
 }
 #aboutme {
-    text-align: center;
+    text-align: left;
     display: flexbox;
     border: 5px solid red;
     box-sizing: border-box;
     margin-bottom: 50px;
+    background-color: var(--secondary);
+    margin: 0;
+    font-size: 36px;
+}
+.flexcontainer1,
+.flexcontainer2,
+.flexcontainer3 {
+    margin-left: 0;
+    margin-right: 0;
 }
 .flexcontainer1 {
     display: flex;
     flex-wrap: wrap;
     flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
 }
-.flexcontainer2 {
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: row;
-}
+.flexcontainer2,
 .flexcontainer3 {
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
 }
 .flex {
     justify-content: center;
@@ -91,7 +101,6 @@ secondary {
     border: 25px solid green;
     box-sizing: border-box;
     border-radius: 10%;
-    flex: 1;
     flex-direction: column;
     margin: 50px 50px 50px 50px;
 }
@@ -103,9 +112,9 @@ secondary {
     border: 25px solid green;
     box-sizing: border-box;
     border-radius: 10%;
-    flex-grow: 8;
+    flex-grow: 20;
     flex-direction: column;
-    margin: 50px 50px 50px 50px;
+    margin: 100px 100px 100px 100px;
 }
 .flex-large:hover,
 .flex:hover {
@@ -116,9 +125,16 @@ secondary {
 #relative2 {
     position: relative;
     bottom: -25px;
-    right: 100px;
     border: 5px solid var(--primary);
     box-sizing: border-box;
+}
+.B1,
+.B2,
+.B3,
+.B4,
+.B5 {
+    box-shadow: rgb(168, 168, 175);
+
 }
 h2 {
    text-align: center;
@@ -126,6 +142,7 @@ h2 {
 h3 {
     text-align: center;
     align-content: center;
+    text-decoration: underline;
  }
 #Contact-Info {
     text-align: center;
@@ -137,10 +154,10 @@ h3 {
 }
 footer {
     width: 100%;
-    margin-top: auto;
     background-color: var(--secondary);
     display: flex;
     justify-content: center;
+    margin: 0;
 }
 ul {
     list-style-type: none;
@@ -157,13 +174,29 @@ li {
     padding: 20px;
     margin: auto;
 }
-@media screen and (max-width: 768px) {
-.flexontainer1,
+@media screen and (min-width: 980px) {
+h1 {
+    text-align: center;
+}
+}
+@media screen and (min-width: 768px) {
+h1 {
+    text-align: center;
+}
+.headercolumn {
+    width: 30%;
+    margin-right: 50px;
+    text-align: left;
+}
+.infocolumn {
+    width: 70%;
+}    
+}
+@media screen and (min-width: 400px) {
+.flexcontainer1,
 .flexcontainer2,
 .flexcontainer3 {
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: row;
+    display: block;
     justify-content: center;
     align-items: center;
     margin-left: 10px;
@@ -172,10 +205,37 @@ li {
 h1 {
     text-align: center;
 }
+.headercolumn {
+   width: 0;
+   display: block;
+   align-items: center;
+}
+#aboutme {
+    font-size: 20px;
+}
+.infocolumn {
+    width: 0;
+    display: block;
+    align-items: center;
 }
 
+}
 @media screen and (max-width: 320px) {
 body {
+    align-items: center;
+}
+.headercolumn {
+    float: none;
+    margin-left: 10px;
+}
+.infocolumn {
+    float:none;
+    margin-left: 10px;
+}
+.flexcontainer1,
+.flexcontainer2,
+.flexcontainer3 {
+    display: block;
     align-items: center;
 }
 header{
@@ -183,45 +243,6 @@ header{
 }
 footer {
     width: 100%;
+    margin: 0;
 }
 }
-/*
-.flexontainer1,
-.flexcontainer2,
-.flexcontainer3 {
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    margin: 50px;
-    width: 50px;
-    height: 50px;
-}
-h1 {
-    text-align: center;
-}
-.headercolumn {
-    align-items: center;
-    width: auto;
-}
-.infocolumn {
-    align-items: center;
-    width: auto;
-}
-primary {
-    text-align: center;
-    justify-content: center;
-    align-items: center;
-}
-secondary {
-    justify-content: center;
-    align-items: center;
-}
-footer {
-    text-align: center;
-    justify-content: center;
-    width: 100%;
-}
-}
-*/
