@@ -68,7 +68,17 @@ secondary {
     box-sizing: border-box;
     margin-bottom: 50px;
 }
-.flexcontainer {
+.flexcontainer1 {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+}
+.flexcontainer2 {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+.flexcontainer3 {
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
@@ -97,6 +107,7 @@ secondary {
     flex-direction: column;
     margin: 50px 50px 50px 50px;
 }
+
 /*
 .container_1 {
     width: 700px;
