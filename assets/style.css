@@ -37,28 +37,37 @@ button {
 h1 {
     font-size: 32px;
     flex-direction: row;
-    margin-left: 20px;
     margin-top: 32px;
     flex: 1;
     text-align: left;
     text-decoration:underline;
 }
 .headercolumn {
-    float: left;
-    width: 20%;
+    align-items: center;
+    justify-items: center;
+    width: 100%;
 }
 .infocolumn {
-    float:right;
-    width: 75%;
-    margin-right: 200px;
+    align-items: center;
+    justify-items: center;
+    margin: auto;
 }
-#photo {
+.imgcontainer {
     align-items: center;
     display: flexbox;
+    justify-content: center;
     border: 5px solid red;
     box-sizing: border-box;
     margin-bottom: 50px;
     font-size: 24px;
+    background-color: var(--secondary);
+}
+.bio {
+    background-size: cover;
+    width: 100%;
+    height: auto;
+    background-image: url ("/My-Portfolio-Showcase/imgport.png");
+    background-repeat: no-repeat;
 }
 #aboutme {
     text-align: left;
@@ -80,6 +89,7 @@ h1 {
     flex-wrap: wrap;
     flex-direction: row;
     justify-content: center;
+    margin: 10px;
 }
 .flex {
     justify-content: center;
@@ -89,15 +99,17 @@ h1 {
     border: 25px solid green;
     box-sizing: border-box;
     border-radius: 10%;
+    margin: 10px;
 }
 .flex-large {
     justify-content: center;
     align-items: center;
     background-color: var(--secondary);
-    padding: 50px solid red;
+    padding: 100px;
     border: 25px solid green;
     box-sizing: border-box;
     border-radius: 10%;
+    margin: 10px;
 }
 .flex-large:hover,
 .flex:hover {
@@ -121,6 +133,7 @@ h1 {
 }
 h2 {
    text-align: center;
+   margin: auto;
 }
 h3 {
     text-align: center;
@@ -131,37 +144,33 @@ h3 {
     text-align: center;
     display: flex;
     flex: wrap;
-    flex-direction:row;
-    justify-content: space-between;
+    flex-direction:column;
+    align-items: center;
+    
 }
 footer {
     width: 100%;
     background-color: var(--secondary);
-    display: flex;
-    justify-content: center;
+    align-items: center;
 }
 ul {
-    list-style-type: none;
+    list-style-type: square;
+    padding: 0;
     display: flex;
     flex-wrap: wrap;
-    flex-direction: row;
-    justify-content: space-between;
+    flex-direction: column;
 }
 li {
-    align-items: center;
-    text-align: center;
     padding: 20px;
+    align-items: center;
 }
 @media screen and (min-width: 980px) {
 h1 {
     text-align: center;
+    justify-content: center;
 }
-.headercolumn {
-    width: 30%;
-    text-align: left;
-}
-.infocolumn {
-    width: 70%;
+h2 {
+    text-align: center;
     justify-content: center;
 }
 .flexcontainer1,
@@ -174,6 +183,10 @@ h1 {
 @media screen and (min-width: 768px) {
 h1 {
     text-align: center;
+}
+h2 {
+    text-align: center;
+    justify-content: center;
 }
 .headercolumn {
     width: 30%;
@@ -189,6 +202,7 @@ h1 {
 .flexcontainer3 {
     justify-content: center;
     align-items: center;
+    flex-grow: 2 0 0;
 }    
 }
 @media screen and (min-width: 400px) {
@@ -212,7 +226,10 @@ h1 {
     float: none;
     align-items: center;
 }
-
+footer {
+    width: 100%;
+    justify-items: center;
+}
 }
 @media screen and (max-width: 320px) {
 body {
@@ -220,11 +237,17 @@ body {
 }
 .headercolumn {
     float: none;
-    margin-left: 10px;
+    text-align: center;
+    justify-content: center;
 }
 .infocolumn {
     float:none;
+    text-align: center;
     margin-left: 10px;
+}
+#photo, 
+#aboutme {
+    margin-left:0;
 }
 .flexcontainer1,
 .flexcontainer2,
@@ -232,10 +255,15 @@ body {
     align-items: center;
     justify-items: center;
 }
+.flex-large {
+    padding: 25px;
+}
 header{
     align-content: center;
 }
 footer {
-    width: 100%;
+    max-width: 100%;
+    justify-items: center;
+    align-items: center;
 }
 }

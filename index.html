@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width", initial-scale="1.0">
+    <meta name="viewport" content="width=device-width initial-scale=1.0">
     <title>My Portfolio Showcase</title>
     <link rel="stylesheet" href="./assets/reset.css"/>
     <link rel="stylesheet" href="./assets/style.css"/>
@@ -13,26 +13,26 @@
     <header>Robert Campbell Van Vliet II, Full Stack Developer</header>
         <nav>
             <button><a href="#About Me">About Me</a></button>
-            <button><a href="#Work">Work</a></button>
+            <button><a href="#headercolumn">Work</a></button>
             <button><a href="#Contact-Info">Contact Info</a></button>
         </nav>
         <h1 class="headercolumn">About Me</h1>
         <primary>
             <section class="infocolumn">
-                <div id="photo">
-                    <img src="#" alt="Bio photo">
+                <div class="imgcontainer">
+                    <img src="/My-Portfolio-Showcase/imgport.png" class="bio" alt="Bio photo">
                     <figcaption>Location: Winston Salem, NC</figcaption>
                 </div>
                 <div>
                     <p id="aboutme">
                     A little story about me. I am a growing full stack developer. My projects for 
-                    various computer programming languages are listed below. Click on the link to view
+                    various computer programming languages are listed below. Click on the various Portfolio tokens to view
                     my projects. Best Regards!
                     </p>
                 </div>
             </section>
         </primary>
-        <h1 class="headercolumn">Work</h1>
+        <h1 id="headercolumn" class="headercolumn">Work</h1>
         <secondary>
             <section class="infocolumn">
                 <div class="flexcontainer1">
@@ -78,11 +78,13 @@
     <section>
         <h3>Contact Info</h3>
             <div id="Contact-Info">
+                <div>
                 <ul> 
                     <li>Phone number: 725-261-6332</li>
                     <li>Email:<a href="rcvanvlietii@gmail.com">rcvanvlietii@gmail.com</a></li>
-                    <li>Git Hub:<a href="#">RVanVlietII</a></li>
+                    <li>Git Hub:<a href="https://github.com/RVanVlietII">RVanVlietII</a></li>
                 </ul>
+                </div>
             </div>
     </section>
 </footer>
