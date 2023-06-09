@@ -65,33 +65,21 @@ h1 {
     display: flexbox;
     border: 5px solid red;
     box-sizing: border-box;
-    margin-bottom: 50px;
     background-color: var(--secondary);
-    margin: 0;
     font-size: 36px;
-}
-.flexcontainer1,
-.flexcontainer2,
-.flexcontainer3 {
-    margin-left: 0;
-    margin-right: 0;
 }
 .flexcontainer1 {
     display: flex;
     flex-wrap: wrap;
     flex-direction: column;
-    align-items: center;
     justify-content: center;
-    margin: 0;
 }
 .flexcontainer2,
 .flexcontainer3 {
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
-    align-items: center;
     justify-content: center;
-    margin: 0;
 }
 .flex {
     justify-content: center;
@@ -101,8 +89,6 @@ h1 {
     border: 25px solid green;
     box-sizing: border-box;
     border-radius: 10%;
-    flex-direction: column;
-    margin: 50px 50px 50px 50px;
 }
 .flex-large {
     justify-content: center;
@@ -112,9 +98,6 @@ h1 {
     border: 25px solid green;
     box-sizing: border-box;
     border-radius: 10%;
-    flex-grow: 20;
-    flex-direction: column;
-    margin: 100px 100px 100px 100px;
 }
 .flex-large:hover,
 .flex:hover {
@@ -150,14 +133,12 @@ h3 {
     flex: wrap;
     flex-direction:row;
     justify-content: space-between;
-    align-items: center;
 }
 footer {
     width: 100%;
     background-color: var(--secondary);
     display: flex;
     justify-content: center;
-    margin: 0;
 }
 ul {
     list-style-type: none;
@@ -165,18 +146,29 @@ ul {
     flex-wrap: wrap;
     flex-direction: row;
     justify-content: space-between;
-    padding: 0;
-    margin: 0;
 }
 li {
     align-items: center;
     text-align: center;
     padding: 20px;
-    margin: auto;
 }
 @media screen and (min-width: 980px) {
 h1 {
     text-align: center;
+}
+.headercolumn {
+    width: 30%;
+    text-align: left;
+}
+.infocolumn {
+    width: 70%;
+    justify-content: center;
+}
+.flexcontainer1,
+.flexcontainer2,
+.flexcontainer3 {
+    justify-content: center;
+    align-items: center;
 }
 }
 @media screen and (min-width: 768px) {
@@ -190,32 +182,34 @@ h1 {
 }
 .infocolumn {
     width: 70%;
+    text-align: center;
+}
+.flexcontainer1,
+.flexcontainer2,
+.flexcontainer3 {
+    justify-content: center;
+    align-items: center;
 }    
 }
 @media screen and (min-width: 400px) {
 .flexcontainer1,
 .flexcontainer2,
 .flexcontainer3 {
-    display: block;
     justify-content: center;
     align-items: center;
-    margin-left: 10px;
-    margin-right: 10px;
 }
 h1 {
     text-align: center;
 }
 .headercolumn {
-   width: 0;
-   display: block;
+   float: none;
    align-items: center;
 }
 #aboutme {
     font-size: 20px;
 }
 .infocolumn {
-    width: 0;
-    display: block;
+    float: none;
     align-items: center;
 }
 
@@ -235,14 +229,13 @@ body {
 .flexcontainer1,
 .flexcontainer2,
 .flexcontainer3 {
-    display: block;
     align-items: center;
+    justify-items: center;
 }
 header{
     align-content: center;
 }
 footer {
     width: 100%;
-    margin: 0;
 }
 }
