@@ -91,10 +91,9 @@ h1 {
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
-    justify-content: center;
     margin: 10px;
 }
-.flex {
+.flex-small {
     justify-content: center;
     align-items: center;
     background-color: var(--secondary);
@@ -103,16 +102,19 @@ h1 {
     box-sizing: border-box;
     border-radius: 10%;
     margin: 10px;
+    background-size: cover;
 }
 .flex-large {
     justify-content: center;
     align-items: center;
     background-color: var(--secondary);
-    padding: 50px;
+    padding: 100px;
     border: 25px solid green;
     box-sizing: border-box;
     border-radius: 10%;
     margin: 10px;
+    flex: 1;
+    background-size: cover;
 }
 .flex-large:hover,
 .flex:hover {
@@ -120,16 +122,6 @@ h1 {
     border-color: rgb(225, 39, 176);
     color:rgb(202, 216, 216);
 }
-/*.content1 {
-    width: 50%;
-    height: 50%;
-    justify-content: center;
-}
-.content {
-    width: 25%;
-    height: 25%;
-    justify-content: center;
-}*/
 #relative2 {
     position: relative;
     bottom: -25px;
@@ -186,11 +178,14 @@ h2 {
     text-align: center;
     justify-content: center;
 }
-.flexcontainer1,
-.flexcontainer2,
-.flexcontainer3 {
+.flexcontainer1 {
     justify-content: center;
     align-items: center;
+}
+.flexcontainer2,
+.flexcontainer3 {
+    align-items: center;
+    justify-content: center;
 }
 }
 @media screen and (min-width: 768px) {
@@ -210,25 +205,29 @@ h2 {
     width: 70%;
     text-align: center;
 }
-.img {
-    align-items: center;
+
+.flexcontainer1 {
     justify-content: center;
-    width: 30%;
-    height: 30%;
 }
-.flexcontainer1,
 .flexcontainer2,
 .flexcontainer3 {
-    justify-content: center;
     align-items: center;
-}    
+    justify-content: center;
+    flex-direction: column;
+} 
+.flex-small {
+    flex-basis: 100%;
+    max-width: 100%;
+}   
 }
 @media screen and (min-width: 400px) {
-.flexcontainer1,
+.flexcontainer1 {
+    justify-content: center;
+}
 .flexcontainer2,
 .flexcontainer3 {
-    justify-content: center;
     align-items: center;
+    justify-content: center;
 }
 h1 {
     text-align: center;
@@ -267,11 +266,13 @@ body {
 #aboutme {
     margin-left:0;
 }
-.flexcontainer1,
+.flexcontainer1 {
+    justify-content: center;
+}
 .flexcontainer2,
 .flexcontainer3 {
     align-items: center;
-    justify-items: center;
+    justify-content: center;
 }
 .flex-large {
     padding: 25px;
