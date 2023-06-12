@@ -89,6 +89,7 @@ h1 {
     flex-wrap: wrap;
     flex-direction: column;
     justify-content: center;
+    align-items: center;
 }
 .flexcontainer2,
 .flexcontainer3 {
@@ -96,19 +97,21 @@ h1 {
     flex-wrap: wrap;
     flex-direction: row;
     width: 50%;
+    align-items: center;
+    justify-content: center;
 }
 .flex-small {
     justify-content: center;
     align-items: center;
     background-color: var(--secondary);
-    padding: 50px solid var(--third);
-    border: 25px solid green;
+    padding: 25px solid var(--third);
+    border: 20px solid green;
     box-sizing: border-box;
-    border-radius: 10%;
     margin: 10px;
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
+    background-clip: padding-box;
     width: 50%;
 }
 .flex-large {
@@ -116,24 +119,26 @@ h1 {
     align-items: center;
     background-color: var(--secondary);
     padding: 100px;
-    border: 25px solid green;
+    border: 20px solid green;
     box-sizing: border-box;
-    border-radius: 10%;
     margin: 10px;
     flex: 1;
     background-size: cover;
+    background-repeat: no-repeat;
+    background-clip: padding-box;
     width: 50%;
 }
 .flex-large:hover,
-.flex:hover {
+.flex-small:hover {
     cursor:progress;
     border-color: rgb(225, 39, 176);
     color:rgb(202, 216, 216);
 }
+#relative1,
 #relative2 {
     position: relative;
     top: 0px;
-    border: 5px solid var(--primary);
+    border: 1px solid var(--primary);
     box-sizing: border-box;
 }
 .B1,
@@ -186,16 +191,8 @@ h2 {
     text-align: center;
     justify-content: center;
 }
-.flexcontainer1 {
-    justify-content: center;
-    align-items: center;
 }
-.flexcontainer2,
-.flexcontainer3 {
-    align-items: center;
-    justify-content: center;
-}
-}
+
 @media screen and (min-width: 768px) {
 h1 {
     text-align: center;
@@ -209,27 +206,8 @@ h2 {
     margin-right: 50px;
     text-align: center;
 }
-
-.flexcontainer1 {
-    justify-content: center;
-    align-items: center;
-}
-.flexcontainer2,
-.flexcontainer3 {
-    align-items: center;
-    justify-content: center;
 } 
-   
-}
-@media screen and (min-width: 400px) {
-.flexcontainer1 {
-    justify-content: center;
-    align-items: center;
-}
-.flexcontainer2,
-.flexcontainer3 {
-    align-items: center;
-    justify-content: center;
+@media screen and (min-width: 325px) {
 }
 .flex-small {
     font-size: smaller;
@@ -250,7 +228,7 @@ footer {
     width: 100%;
     justify-items: center;
 }
-}
+
 @media screen and (max-width: 320px) {
 body {
     align-items: center;
@@ -264,17 +242,12 @@ body {
 #aboutme {
     margin-left:0;
 }
-.flexcontainer1 {
-    justify-content: center;
-    align-items: center;
 }
-.flexcontainer2,
-.flexcontainer3 {
-    align-items: center;
-    justify-content: center;
-}
-.flex-large {
-    padding: 25px;
+.flex-large,
+.flex-small {
+    padding: 5px;
+    font-size: 10px;
+    border: 5px solid green;
 }
 header{
     align-content: center;
@@ -283,5 +256,4 @@ footer {
     max-width: 100%;
     justify-items: center;
     align-items: center;
-}
 }
