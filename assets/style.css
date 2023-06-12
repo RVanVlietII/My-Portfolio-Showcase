@@ -1,3 +1,4 @@
+/*global settings unless defined specifically*/
 * {
     box-sizing: border-box;
     font-family: arial;
@@ -182,6 +183,7 @@ li {
     padding: 20px;
     align-items: center;
 }
+/*Desktop viewing*/
 @media screen and (min-width: 980px) {
 h1 {
     text-align: center;
@@ -192,7 +194,7 @@ h2 {
     justify-content: center;
 }
 }
-
+/*Tablet viewing*/
 @media screen and (min-width: 768px) {
 h1 {
     text-align: center;
@@ -207,6 +209,7 @@ h2 {
     text-align: center;
 }
 } 
+/*Phone to bigger than phone devices*/
 @media screen and (min-width: 325px) {
 }
 .flex-small {
@@ -228,7 +231,7 @@ footer {
     width: 100%;
     justify-items: center;
 }
-
+/*phone devices or smaller*/
 @media screen and (max-width: 320px) {
 body {
     align-items: center;
