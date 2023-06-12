@@ -63,7 +63,9 @@ h1 {
     font-size: 24px;
     background-color: var(--secondary);
 }
-.bio {
+.bio,
+.content1,
+.content {
     background-size: cover;
     width: 100%;
     height: auto;
@@ -118,7 +120,7 @@ h1 {
     border-color: rgb(225, 39, 176);
     color:rgb(202, 216, 216);
 }
-.content1 {
+/*.content1 {
     width: 50%;
     height: 50%;
     justify-content: center;
@@ -127,7 +129,7 @@ h1 {
     width: 25%;
     height: 25%;
     justify-content: center;
-}
+}*/
 #relative2 {
     position: relative;
     bottom: -25px;
