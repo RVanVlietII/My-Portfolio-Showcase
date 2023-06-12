@@ -11,7 +11,7 @@ body {
 :root {
     --primary: black;
     --secondary: rgb(196, 194, 195);
-    --third: rgb(126, 119, 120);
+    --third: red;
 }
 header {
     text-align: center;
@@ -27,6 +27,7 @@ float: left;
 background-color: var(--secondary);
 width: 100%;
 margin: 0;
+box-shadow: 10px #0ff;
 }
 button:hover {
     background-color: rgb(218, 83, 16);
@@ -56,7 +57,7 @@ h1 {
     align-items: center;
     display: flexbox;
     justify-content: center;
-    border: 5px solid red;
+    border: 5px solid var(--third);
     box-sizing: border-box;
     margin-bottom: 50px;
     font-size: 24px;
@@ -72,7 +73,7 @@ h1 {
 #aboutme {
     text-align: left;
     display: flexbox;
-    border: 5px solid red;
+    border: 5px solid var(--third);
     box-sizing: border-box;
     background-color: var(--secondary);
     font-size: 36px;
@@ -95,7 +96,7 @@ h1 {
     justify-content: center;
     align-items: center;
     background-color: var(--secondary);
-    padding: 50px solid red;
+    padding: 50px solid var(--third);
     border: 25px solid green;
     box-sizing: border-box;
     border-radius: 10%;
@@ -105,7 +106,7 @@ h1 {
     justify-content: center;
     align-items: center;
     background-color: var(--secondary);
-    padding: 100px;
+    padding: 50px;
     border: 25px solid green;
     box-sizing: border-box;
     border-radius: 10%;
@@ -116,6 +117,11 @@ h1 {
     cursor:progress;
     border-color: rgb(225, 39, 176);
     color:rgb(202, 216, 216);
+}
+.content {
+    width: 50%;
+    height: 50%;
+    justify-content: center;
 }
 #relative2 {
     position: relative;
@@ -197,12 +203,17 @@ h2 {
     width: 70%;
     text-align: center;
 }
+.img {
+    align-items: center;
+    justify-content: center;
+    width: 30%;
+    height: 30%;
+}
 .flexcontainer1,
 .flexcontainer2,
 .flexcontainer3 {
     justify-content: center;
     align-items: center;
-    flex-grow: 2 0 0;
 }    
 }
 @media screen and (min-width: 400px) {
