@@ -118,9 +118,14 @@ h1 {
     border-color: rgb(225, 39, 176);
     color:rgb(202, 216, 216);
 }
-.content {
+.content1 {
     width: 50%;
     height: 50%;
+    justify-content: center;
+}
+.content {
+    width: 25%;
+    height: 25%;
     justify-content: center;
 }
 #relative2 {
