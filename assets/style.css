@@ -115,7 +115,6 @@ h1 {
     background-position: center;
     background-clip: padding-box;
     width: 50%;
-    font-size: 40px;
 }
 .flex-large {
     justify-content: center;
@@ -130,7 +129,6 @@ h1 {
     background-repeat: no-repeat;
     background-clip: padding-box;
     width: 50%;
-    font-size: 40px;
 }
 .flex-large:hover,
 .flex-small:hover {
@@ -198,11 +196,7 @@ h2 {
 }
 #relative1,
 #relative2 {
-    font-size: 40px;
-}
-.flex-large,
-.flex-small {
-    font-size: 40px;
+    font-size: 50em;
 }
 }
 /*Tablet viewing*/
@@ -219,21 +213,13 @@ h2 {
     margin-right: 50px;
     text-align: center;
 }
-.flex-large,
-.flex-small {
-    font-size: 28px;
-}
 #relative1,
 #relative2 {
-    font-size: 28px;
+    font-size: 20em;
 }
 } 
 /*Phone to bigger than phone devices*/
 @media screen and (min-width: 325px) {
-.flex-large,
-.flex-small {
-    font-size: 8px;
-}
 h1 {
     text-align: center;
 }
@@ -247,7 +233,7 @@ h1 {
 }
 #relative1,
 #relative2 {
-    font-size: 0.6em;
+    font-size: 0.4em;
 }
 footer {
     width: 100%;
@@ -263,7 +249,6 @@ body {
     text-align: center;
     justify-content: center;
 }
-
 #photo, 
 #aboutme {
     margin-left:0;
