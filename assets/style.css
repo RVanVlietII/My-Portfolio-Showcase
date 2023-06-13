@@ -201,6 +201,10 @@ h2 {
 .flex-small {
     font-size: 48px;
 }
+#relative1,
+#relative2 {
+    font-size: 28px;
+}
 }
 /*Tablet viewing*/
 @media screen and (min-width: 768px) {
