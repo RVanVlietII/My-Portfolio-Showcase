@@ -9,3 +9,9 @@ Sources: (pictures were utilized as placeholders for the various languages and a
 3)	React - https://www.telerik.com/blogs/what-is-react-used-for
 4)	Mongo - https://www.turing.com/blog/mongodb-beginners-guide/
 5)	SQL - https://www.shutterstock.com/search/sql 
+
+Screenshot
+ 
+<img width="1438" alt="Real-Screenshot" src=/Users/rvanvlietii/bootcamp/Class/Week-2/homework/My-Portfolio-Showcase/screenshot.png>
+
+Link to website is available here: https://rvanvlietii.github.io/My-Portfolio-Showcase/
