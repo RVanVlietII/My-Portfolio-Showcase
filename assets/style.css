@@ -217,7 +217,7 @@ h2 {
 }
 .flex-large,
 .flex-small {
-    font-size: 18px;
+    font-size: 28px;
 }
 } 
 /*Phone to bigger than phone devices*/
@@ -225,7 +225,7 @@ h2 {
 }
 .flex-large,
 .flex-small {
-    font-size: 6px;
+    font-size: 8px;
 }
 h1 {
     text-align: center;
