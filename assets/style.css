@@ -144,6 +144,7 @@ h1 {
     top: 0px;
     border: 1px solid var(--primary);
     box-sizing: border-box;
+    font-size: 36px;
 }
 .B1,
 .B2,
@@ -219,6 +220,10 @@ h2 {
 .flex-small {
     font-size: 28px;
 }
+#relative1,
+#relative2 {
+    font-size: 28px;
+}
 } 
 /*Phone to bigger than phone devices*/
 @media screen and (min-width: 325px) {
@@ -238,7 +243,10 @@ h1 {
 #aboutme {
     font-size: 20px;
 }
-
+#relative1,
+#relative2 {
+    font-size: 8px;
+}
 footer {
     width: 100%;
     justify-items: center;
@@ -263,6 +271,10 @@ body {
     padding: 5px;
     font-size: 4px;
     border: 5px solid (var--quad);
+}
+#relative1,
+#relative2 {
+    font-size: 4px;
 }
 header{
     align-content: center;
