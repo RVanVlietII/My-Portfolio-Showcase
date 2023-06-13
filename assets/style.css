@@ -115,13 +115,13 @@ h1 {
     background-position: center;
     background-clip: padding-box;
     width: 50%;
-    font-size: 36px;
+    font-size: 40px;
 }
 .flex-large {
     justify-content: center;
     align-items: center;
     background-color: var(--secondary);
-    padding: 100px;
+    padding: 10px;
     border: 10px solid var(--quad);
     box-sizing: border-box;
     margin: 10px;
@@ -130,7 +130,7 @@ h1 {
     background-repeat: no-repeat;
     background-clip: padding-box;
     width: 50%;
-    font-size: 48px;
+    font-size: 40px;
 }
 .flex-large:hover,
 .flex-small:hover {
@@ -144,7 +144,6 @@ h1 {
     top: 0px;
     border: 1px solid var(--primary);
     box-sizing: border-box;
-    font-size: 3em;
 }
 .B1,
 .B2,
@@ -197,13 +196,13 @@ h2 {
     text-align: center;
     justify-content: center;
 }
-.flex-large,
-.flex-small {
-    font-size: 48px;
-}
 #relative1,
 #relative2 {
-    font-size: 3em;
+    font-size: 40px;
+}
+.flex-large,
+.flex-small {
+    font-size: 40px;
 }
 }
 /*Tablet viewing*/
@@ -226,12 +225,11 @@ h2 {
 }
 #relative1,
 #relative2 {
-    font-size: 1.5em;
+    font-size: 28px;
 }
 } 
 /*Phone to bigger than phone devices*/
 @media screen and (min-width: 325px) {
-}
 .flex-large,
 .flex-small {
     font-size: 8px;
@@ -255,6 +253,7 @@ footer {
     width: 100%;
     justify-items: center;
 }
+}
 /*phone devices or smaller*/
 @media screen and (max-width: 320px) {
 body {
@@ -269,11 +268,10 @@ body {
 #aboutme {
     margin-left:0;
 }
-}
+
 .flex-large,
 .flex-small {
     padding: 5px;
-    font-size: 4px;
     border: 5px solid (var--quad);
 }
 #relative1,
@@ -287,4 +285,5 @@ footer {
     max-width: 100%;
     justify-items: center;
     align-items: center;
+}
 }
