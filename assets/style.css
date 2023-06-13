@@ -196,7 +196,7 @@ h2 {
 }
 #relative1,
 #relative2 {
-    font-size: 50em;
+    font-size: 20em;
 }
 }
 /*Tablet viewing*/
@@ -215,7 +215,7 @@ h2 {
 }
 #relative1,
 #relative2 {
-    font-size: 20em;
+    font-size: 10em;
 }
 } 
 /*Phone to bigger than phone devices*/
