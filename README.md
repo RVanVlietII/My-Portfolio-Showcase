@@ -11,7 +11,7 @@ Sources: (pictures were utilized as placeholders for the various languages and a
 5)	SQL - https://www.shutterstock.com/search/sql 
 
 Screenshot
- 
-<img width="1438" alt="Real-Screenshot" src=/Users/rvanvlietii/bootcamp/Class/Week-2/homework/My-Portfolio-Showcase/screenshot.png>
+ <img width="1470" alt="screenshot" src="https://github.com/RVanVlietII/My-Portfolio-Showcase/assets/129308007/59444ad3-bbd7-4909-ae7d-33b4d3cbfa88">
+
 
 Link to website is available here: https://rvanvlietii.github.io/My-Portfolio-Showcase/
