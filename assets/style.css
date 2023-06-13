@@ -250,7 +250,7 @@ body {
 .flex-large,
 .flex-small {
     padding: 5px;
-    font-size: 6px;
+    font-size: smaller;
     border: 5px solid (var--quad);
 }
 header{
