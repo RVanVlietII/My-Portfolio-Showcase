@@ -223,8 +223,9 @@ h2 {
 /*Phone to bigger than phone devices*/
 @media screen and (min-width: 325px) {
 }
+.flex-large,
 .flex-small {
-    font-size: 8px;
+    font-size: 6px;
 }
 h1 {
     text-align: center;
@@ -260,7 +261,7 @@ body {
 .flex-large,
 .flex-small {
     padding: 5px;
-    font-size: 6px;
+    font-size: 4px;
     border: 5px solid (var--quad);
 }
 header{
