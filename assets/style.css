@@ -144,7 +144,7 @@ h1 {
     top: 0px;
     border: 1px solid var(--primary);
     box-sizing: border-box;
-    font-size: 36px;
+    font-size: 3em;
 }
 .B1,
 .B2,
@@ -203,7 +203,7 @@ h2 {
 }
 #relative1,
 #relative2 {
-    font-size: 1em;
+    font-size: 3em;
 }
 }
 /*Tablet viewing*/
@@ -226,7 +226,7 @@ h2 {
 }
 #relative1,
 #relative2 {
-    font-size: 0.8em;
+    font-size: 1.5em;
 }
 } 
 /*Phone to bigger than phone devices*/
