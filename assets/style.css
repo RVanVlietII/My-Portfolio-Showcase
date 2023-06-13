@@ -130,7 +130,7 @@ h1 {
     background-repeat: no-repeat;
     background-clip: padding-box;
     width: 50%;
-    font-size: 36px;
+    font-size: 48px;
 }
 .flex-large:hover,
 .flex-small:hover {
@@ -198,7 +198,7 @@ h2 {
 }
 .flex-large,
 .flex-small {
-    font-size: 36px;
+    font-size: 48px;
 }
 }
 /*Tablet viewing*/
