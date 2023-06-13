@@ -203,7 +203,7 @@ h2 {
 }
 #relative1,
 #relative2 {
-    font-size: 48px;
+    font-size: 1em;
 }
 }
 /*Tablet viewing*/
@@ -226,7 +226,7 @@ h2 {
 }
 #relative1,
 #relative2 {
-    font-size: 28px;
+    font-size: 0.8em;
 }
 } 
 /*Phone to bigger than phone devices*/
@@ -249,7 +249,7 @@ h1 {
 }
 #relative1,
 #relative2 {
-    font-size: 8px;
+    font-size: 0.6em;
 }
 footer {
     width: 100%;
@@ -278,7 +278,7 @@ body {
 }
 #relative1,
 #relative2 {
-    font-size: 4px;
+    font-size: 0.4em;
 }
 header{
     align-content: center;
