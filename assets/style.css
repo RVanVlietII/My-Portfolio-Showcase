@@ -115,6 +115,7 @@ h1 {
     background-position: center;
     background-clip: padding-box;
     width: 50%;
+    font-size: 36px;
 }
 .flex-large {
     justify-content: center;
@@ -129,6 +130,7 @@ h1 {
     background-repeat: no-repeat;
     background-clip: padding-box;
     width: 50%;
+    font-size: 36px;
 }
 .flex-large:hover,
 .flex-small:hover {
