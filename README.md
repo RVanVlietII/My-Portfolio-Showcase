@@ -1,6 +1,7 @@
 # My-Portfolio-Showcase
 
-Description: This robust application displays my portfolio of computer programming language projects. This application will be updated as projects are completed and I learn more to enhance the layout. Links are provided in the work and contact information section. Thank you for viewing my porfolio showcase.
+## Description 
+This robust application displays my portfolio of computer programming language projects. This application will be updated as projects are completed and I learn more to enhance the layout. Links are provided in the work and contact information section. Thank you for viewing my porfolio showcase.
 
 ## Sources: 
 
